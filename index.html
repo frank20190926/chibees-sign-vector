@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chibees — Mexican Restaurant Sign · Vector Reconstruction</title>
+<style>
+:root{--esp:#231618;--cream:#FAF8F4;--red:#DB3124;--gold:#F2B322;--green:#1E823A}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--esp);color:var(--cream);font:16px/1.5 'Avenir Next','Helvetica Neue',Arial,sans-serif}
+.disp{font-family:Didot,'Bodoni 72',Georgia,serif;font-weight:400}
+.cap{text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:600}
+header{padding:48px 5vw 24px;text-align:center;background:radial-gradient(800px 300px at 50% 0,#4A2C30,transparent)}
+header .cap{color:var(--gold)}
+header h1{font-size:clamp(32px,5vw,56px);margin:10px 0 6px}
+header p{color:rgba(250,248,244,.7);max-width:720px;margin:0 auto}
+section{padding:32px 5vw;max-width:1280px;margin:0 auto}
+h2{font-size:13px;color:var(--gold);border-bottom:1px solid rgba(242,179,34,.5);padding-bottom:8px;margin-bottom:18px}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.tabs button,.dl a{font:600 12px 'Avenir Next',Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;border:1px solid rgba(250,248,244,.35);background:transparent;color:var(--cream);padding:10px 14px;cursor:pointer;text-decoration:none;border-radius:2px}
+.tabs button[aria-pressed=true]{background:var(--gold);color:#231915;border-color:var(--gold)}
+.tabs button:hover,.dl a:hover{border-color:var(--gold)}
+.stage{background:#281A1D;border-radius:4px;padding:2vw;display:flex;align-items:center;justify-content:center;aspect-ratio:4/3;max-height:80vh;margin:0 auto}
+.stage img{max-width:100%;max-height:100%;display:block}
+.stage.chk{background-color:#fff;background-image:linear-gradient(45deg,#d9d2c8 25%,transparent 25%,transparent 75%,#d9d2c8 75%),linear-gradient(45deg,#d9d2c8 25%,transparent 25%,transparent 75%,#d9d2c8 75%);background-size:24px 24px;background-position:0 0,12px 12px}
+.stage.lt{background:#F4EFE6}
+.stage.wf{background:#09111A}
+.note{margin-top:10px;color:rgba(250,248,244,.65);font-size:14px}
+.cmp{position:relative;aspect-ratio:1080/690;max-width:1000px;margin:0 auto;overflow:hidden;border-radius:4px;user-select:none;touch-action:none;background:#000}
+.cmp img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cmp .top{clip-path:inset(0 50% 0 0)}
+.cmp .bar{position:absolute;top:0;bottom:0;left:50%;width:3px;background:var(--gold);transform:translateX(-1.5px);pointer-events:none}
+.cmp .bar:after{content:"⇆";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:38px;height:38px;border-radius:50%;background:var(--gold);color:#231915;display:grid;place-items:center;font-size:18px}
+.cmp input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize}
+.cmp .l{position:absolute;bottom:10px;padding:4px 9px;font-size:11px;background:rgba(0,0,0,.75)}
+.gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.gal a{display:block;border:1px solid rgba(250,248,244,.2);border-radius:3px;overflow:hidden}
+.gal img{width:100%;display:block}
+.gal span{display:block;padding:8px 12px;color:rgba(250,248,244,.7)}
+.dl{display:flex;flex-wrap:wrap;gap:10px}
+.dl a{background:var(--red);border-color:var(--red)}
+.dl a small{display:block;font-weight:400;letter-spacing:.04em;text-transform:none;opacity:.85;margin-top:2px}
+footer{padding:28px 5vw 48px;text-align:center;color:rgba(250,248,244,.5);font-size:13px}
+</style>
+</head>
+<body>
+<header>
+  <div class="cap">Freelancer Contest #2801274 · Vectorize Mexican Restaurant Sign</div>
+  <h1 class="disp">Chibees — Pure Cubic Bézier Reconstruction</h1>
+  <p>Rebuilt from the employer's monitor photo: moiré and mouse cursor removed, all type outlined, 7 named layers, 6 SVG editions plus AI / EPS / PDF / DXF / PNG.</p>
+</header>
+
+<section>
+  <h2 class="cap">Live vector viewer</h2>
+  <div class="tabs" id="tabs">
+    <button data-src="exports/Chibees_Sign_Exact_Cabinet_RGB.svg" data-bg="" aria-pressed="true">Exact backlit cabinet</button>
+    <button data-src="exports/Chibees_Sign_CtrlY_Wireframe_Blueprint.svg" data-bg="wf">Ctrl+Y outline wireframe</button>
+    <button data-src="exports/Chibees_Sign_Framed_Sticker_Print.svg" data-bg="lt">Framed print / sticker</button>
+    <button data-src="exports/Chibees_Sign_Transparent_Isolate.svg" data-bg="chk">Transparent isolate</button>
+    <button data-src="exports/Chibees_Sign_Monochrome_Vector.svg" data-bg="lt">1-color screen-print</button>
+  </div>
+  <div class="stage" id="stage"><img id="view" src="exports/Chibees_Sign_Exact_Cabinet_RGB.svg" alt="Chibees sign vector view"></div>
+  <p class="note">All views are live SVG — zoom the browser to inspect edges at any scale.</p>
+</section>
+
+<section>
+  <h2 class="cap">Original monitor photo vs. vector reconstruction</h2>
+  <div class="cmp" id="cmp">
+    <img src="assets/render_exact_svg.png" alt="Vector reconstruction" style="object-fit:contain;background:#281A1D">
+    <img class="top" id="top" src="ref/sign_crop_1to1.png" alt="Original monitor photo">
+    <div class="bar" id="bar"></div>
+    <span class="l cap" style="left:10px">Monitor photo · moiré + cursor</span>
+    <span class="l cap" style="right:10px">Vector · clean</span>
+    <input type="range" id="rng" min="0" max="100" value="50" aria-label="Compare slider">
+  </div>
+</section>
+
+<section>
+  <h2 class="cap">Presentation boards · 3200 × 2400</h2>
+  <div class="gal">
+    <a href="chibees_board1.jpg" target="_blank"><img src="chibees_board1.jpg" alt="Board 1" loading="lazy"><span class="cap">Board 1 · Vector sign, forensic audit, color specs</span></a>
+    <a href="chibees_board2.jpg" target="_blank"><img src="chibees_board2.jpg" alt="Board 2" loading="lazy"><span class="cap">Board 2 · Packaging, print &amp; storefront</span></a>
+    <a href="chibees_board3.jpg" target="_blank"><img src="chibees_board3.jpg" alt="Board 3" loading="lazy"><span class="cap">Board 3 · Layer anatomy &amp; hand-off</span></a>
+  </div>
+</section>
+
+<section>
+  <h2 class="cap">Downloads</h2>
+  <div class="dl">
+    <a href="exports/Chibees_Mexican_Restaurant_Master_Vector_Pack.zip" download>Master vector pack<small>ZIP · AI, EPS, PDF, SVG, DXF, PNG</small></a>
+    <a href="exports/Chibees_Sign_Press_Ready_CMYK.pdf" download>Press-ready CMYK PDF<small>4-page specification book</small></a>
+    <a href="exports/Chibees_Sign_Exact_Cabinet_RGB.svg" download>Exact cabinet SVG<small>Outlined, zero text</small></a>
+    <a href="exports/Chibees_Sign_CtrlY_Wireframe_Blueprint.svg" download>Ctrl+Y wireframe SVG<small>Anchors and handles</small></a>
+    <a href="exports/Chibees_Sign_4K_Transparent.png" download>4K transparent PNG<small>4000 × 3000 · 300 DPI</small></a>
+  </div>
+</section>
+
+<footer>Pantone values are suggested matches; confirm against a physical swatch book. CMYK files carry no printer ICC profile — request a press proof.</footer>
+
+<script>
+(function(){
+  var stage=document.getElementById('stage'),view=document.getElementById('view');
+  document.getElementById('tabs').addEventListener('click',function(e){
+    var b=e.target.closest('button'); if(!b) return;
+    [].forEach.call(this.children,function(x){x.setAttribute('aria-pressed',x===b)});
+    view.src=b.dataset.src; stage.className='stage '+b.dataset.bg;
+  });
+  var rng=document.getElementById('rng'),top=document.getElementById('top'),bar=document.getElementById('bar');
+  function set(){top.style.clipPath='inset(0 '+(100-rng.value)+'% 0 0)';bar.style.left=rng.value+'%'}
+  rng.addEventListener('input',set); set();
+})();
+</script>
+</body>
+</html>

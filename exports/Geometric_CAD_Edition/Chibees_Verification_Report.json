@@ -1,0 +1,157 @@
+{
+  "geometry": {
+    "art_paths": 82,
+    "art_anchor_commands": 741,
+    "art_cubic_segments": 369,
+    "art_line_segments": 266,
+    "art_contours": 106,
+    "art_layers": 7,
+    "per_layer": {
+      "01_Cabinet_Arch": {
+        "paths": 1,
+        "anchors": 14
+      },
+      "02_Woodgrain_And_Neon_FX": {
+        "paths": 17,
+        "anchors": 102
+      },
+      "03_Sombrero_Crest": {
+        "paths": 48,
+        "anchors": 261
+      },
+      "04_Splash_Accents": {
+        "paths": 6,
+        "anchors": 24
+      },
+      "05_Wordmark_Chibees_Outlined": {
+        "paths": 8,
+        "anchors": 100
+      },
+      "06_Golden_Swoosh": {
+        "paths": 1,
+        "anchors": 3
+      },
+      "07_Subtitle_Outlined": {
+        "paths": 1,
+        "anchors": 237
+      }
+    },
+    "dxf_layers": {
+      "CUT_CABINET": 1,
+      "DETAIL_ENGRAVE": 22,
+      "VINYL_GOLD": 19,
+      "VINYL_RED": 15,
+      "VINYL_GREEN": 4,
+      "VINYL_ESPRESSO": 45
+    }
+  },
+  "checks": {
+    "Chibees_Sign_CtrlY_Wireframe_Blueprint.svg": {
+      "paths": 1617,
+      "text_elements": 0,
+      "raster_images": 0
+    },
+    "Chibees_Sign_Exact_Cabinet_RGB.svg": {
+      "paths": 100,
+      "text_elements": 0,
+      "raster_images": 0
+    },
+    "Chibees_Sign_Framed_Sticker_Print.svg": {
+      "paths": 82,
+      "text_elements": 0,
+      "raster_images": 0
+    },
+    "Chibees_Sign_Monochrome_Vector.svg": {
+      "paths": 36,
+      "text_elements": 0,
+      "raster_images": 0
+    },
+    "Chibees_Sign_Neon_Night_Edition.svg": {
+      "paths": 271,
+      "text_elements": 0,
+      "raster_images": 0
+    },
+    "Chibees_Sign_Transparent_Isolate.svg": {
+      "paths": 76,
+      "text_elements": 0,
+      "raster_images": 0
+    },
+    "Chibees_Sign_Master_Layered.ai": {
+      "pages": 1,
+      "fonts": 0,
+      "images": 0,
+      "vector_paths": 82,
+      "ocg_layers": 7
+    },
+    "Chibees_Sign_Press_Ready_CMYK.pdf": {
+      "pages": 4,
+      "fonts": 0,
+      "images": 0,
+      "vector_paths": 2031,
+      "ocg_layers": 0
+    },
+    "dxf": {
+      "version": "AC1024",
+      "closed_polylines": 106,
+      "cabinet_height_mm": 1270.0,
+      "cabinet_width_mm": 2228.0701754385964,
+      "audit_errors": 0,
+      "flattening_tolerance_mm": 0.02
+    },
+    "Chibees_Sign_4K_Transparent.png": {
+      "size": [
+        4000,
+        3000
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    "Chibees_Sign_Exact_Cabinet_Preview.png": {
+      "size": [
+        2400,
+        1800
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    "matching_e_geometry": true,
+    "splash_order_both_sides": [
+      "red",
+      "green",
+      "yellow"
+    ],
+    "eps": {
+      "language_level": 3,
+      "process": "CMYK",
+      "paths": 82,
+      "validation": "structural and path parity; no PostScript interpreter available"
+    },
+    "mono": {
+      "inks": 1,
+      "live_strokes": 0,
+      "all_contours_closed": true
+    }
+  },
+  "source_sha256": "2bf8f261e239e0789dba0726e6221c11c561469eae40c1c59a9da0c5fc004e95",
+  "font_sha256": "d72db21f9242aedd6b917d8549ad5921766b24d5f8d0becfda2ff4c620b3c2e0",
+  "limitations": [
+    "Reconstruction of a photographed screen, not a source-art exactness certification.",
+    "50-inch cabinet height is a supplied design assumption, not a measured field dimension.",
+    "AI is a valid layered PDF-compatible interchange file, without proprietary Illustrator editing data; Illustrator round-trip untested.",
+    "Pantone references are suggested visual targets, not spot plates or measured matches.",
+    "DeviceCMYK PDF/EPS; no printer ICC profile or PDF/X certification.",
+    "DXF is nominal contour geometry, not kerf-compensated toolpaths."
+  ]
+}

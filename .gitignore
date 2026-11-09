@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.DS_Store
+ref/20261103_144210.jpg
+ref/sample_entry_*.jpg
